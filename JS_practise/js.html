@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+
+    <script>
+
+        //Conditional Statement
+        //Nested If-Else Statements (1)
+        
+        var totalmarks = prompt("Enter your marks:")
+
+        if (totalmarks >= 99 && totalmarks <= 100) { console.log("Grade A+"); }
+
+        else if (totalmarks >= 80 && totalmarks < 90) {
+            console.log("Grade A");
+        }
+        else if (totalmarks >= 70 && totalmarks < 80) {
+            console.log("Grade B");
+        }
+        else if (totalmarks >= 60 && totalmarks < 70) {
+            console.log("Grade C");
+        }
+        else if (totalmarks >= 50 && totalmarks < 60) {
+            console.log("Grade D");
+        }
+        else {
+            console.log("Fail");
+        }
+
+        //Nested If-Else Statements (2)
+        var x = 10, y = 20;
+
+        if (x > y) {
+            console.log("x is bigger than y");
+        }
+        else if (x = y) {
+            console.log("x is equal to y");
+        }
+        else if (x < y) {
+            console.log("x is smaller than y");
+        }
+
+        //If-Else Statements
+
+        var Package = 70;
+        if (Package < 50) {
+            console.log("Package Declined");
+        }
+        else {
+            console.log("Package Approved");
+        }
+
+        //For Loope
+        for (var i = 0; i < 10; i++) {
+            console.log("Numbers:", i);
+        }
+
+        for (var mom = 9; mom < 10 && mom > 1; mom--) {
+            console.log("decrement", mom)
+        }
+
+        //While Loope
+        let game = 1
+        while (game < 20) {
+            console.log("Order", game)
+            game++;
+        }
+
+        //Switch Statement
+
+        let weekday = "Sunday"
+        switch (weekday) {
+            case "Monday": { console.log("Weekday") }
+                break;
+            case "Tuesday": { console.log("Weekday") }
+                break;
+            case "Wednesday": { console.log("Weekday") }
+                break;
+            case "Thursday": { console.log("Weekday") }
+                break;
+            case "Friday": { console.log("Weekday") }
+                break;
+            case "Saturday": { console.log("Weekend") }
+                break;
+            case "Sunday": { console.log("Weekend") }
+                break;
+            default: console.log("Invalid Value")
+        }
+
+        //Function
+
+        function productoftwonumbers(a, b) {
+            return a * b;
+        }
+        let num = productoftwonumbers(12, 2);
+        console.log("Product", num)
+
+        let num2 = productoftwonumbers(2334, 47874784);
+        console.log("Product", num2)
+
+        //Arrow Function
+        const addtwovalues=(a,b) => a+b;
+        let sum=addtwovalues (4647,9);
+        console.log("Sum",sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
